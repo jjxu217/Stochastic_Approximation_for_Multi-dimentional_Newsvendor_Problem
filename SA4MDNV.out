@@ -1,70 +1,70 @@
 Stochastic Approximation Algo: 
 0-th Repelication: 
-Solution, 0.95 CI, time : &[0.1728,0.2295] &[-0.8480,-0.8395] &6.90 
-Objective functions Expectation -0.843741 
+Solution, 0.95 CI, time : &[0.1735,0.2293] &[-0.8479,-0.8395] &7.23 
+Objective functions Expectation -0.843670 
 NUMofRESOURCE, NUMofPRODUCTION, NUMofROW = 2, 3, 5
 N1, N2 = 10000, 10
 step size constant =  0.100000
 
 1-th Repelication: 
-Solution, 0.95 CI, time : &[0.1735,0.2293] &[-0.8455,-0.8371] &7.17 
-Objective functions Expectation -0.841298 
+Solution, 0.95 CI, time : &[0.1717,0.2286] &[-0.8456,-0.8372] &8.53 
+Objective functions Expectation -0.841413 
 NUMofRESOURCE, NUMofPRODUCTION, NUMofROW = 2, 3, 5
 N1, N2 = 10000, 10
 step size constant =  0.100000
 
 2-th Repelication: 
-Solution, 0.95 CI, time : &[0.1717,0.2286] &[-0.8516,-0.8432] &7.42 
-Objective functions Expectation -0.847405 
+Solution, 0.95 CI, time : &[0.1742,0.2293] &[-0.8519,-0.8434] &7.97 
+Objective functions Expectation -0.847626 
 NUMofRESOURCE, NUMofPRODUCTION, NUMofROW = 2, 3, 5
 N1, N2 = 10000, 10
 step size constant =  0.100000
 
 3-th Repelication: 
-Solution, 0.95 CI, time : &[0.1742,0.2293] &[-0.8510,-0.8425] &7.15 
-Objective functions Expectation -0.846748 
+Solution, 0.95 CI, time : &[0.1733,0.2289] &[-0.8508,-0.8424] &7.47 
+Objective functions Expectation -0.846597 
 NUMofRESOURCE, NUMofPRODUCTION, NUMofROW = 2, 3, 5
 N1, N2 = 10000, 10
 step size constant =  0.100000
 
 4-th Repelication: 
-Solution, 0.95 CI, time : &[0.1733,0.2289] &[-0.8462,-0.8378] &6.05 
-Objective functions Expectation -0.842025 
+Solution, 0.95 CI, time : &[0.1723,0.2276] &[-0.8465,-0.8381] &8.60 
+Objective functions Expectation -0.842326 
 NUMofRESOURCE, NUMofPRODUCTION, NUMofROW = 2, 3, 5
 N1, N2 = 10000, 10
 step size constant =  0.100000
 
 5-th Repelication: 
-Solution, 0.95 CI, time : &[0.1723,0.2276] &[-0.8507,-0.8423] &7.53 
-Objective functions Expectation -0.846489 
+Solution, 0.95 CI, time : &[0.1730,0.2283] &[-0.8501,-0.8416] &8.60 
+Objective functions Expectation -0.845826 
 NUMofRESOURCE, NUMofPRODUCTION, NUMofROW = 2, 3, 5
 N1, N2 = 10000, 10
 step size constant =  0.100000
 
 6-th Repelication: 
-Solution, 0.95 CI, time : &[0.1730,0.2283] &[-0.8491,-0.8407] &7.41 
-Objective functions Expectation -0.844908 
+Solution, 0.95 CI, time : &[0.1725,0.2284] &[-0.8492,-0.8407] &6.01 
+Objective functions Expectation -0.844947 
 NUMofRESOURCE, NUMofPRODUCTION, NUMofROW = 2, 3, 5
 N1, N2 = 10000, 10
 step size constant =  0.100000
 
 7-th Repelication: 
-Solution, 0.95 CI, time : &[0.1725,0.2284] &[-0.8543,-0.8458] &5.14 
-Objective functions Expectation -0.850036 
+Solution, 0.95 CI, time : &[0.1742,0.2284] &[-0.8543,-0.8458] &7.52 
+Objective functions Expectation -0.850089 
 NUMofRESOURCE, NUMofPRODUCTION, NUMofROW = 2, 3, 5
 N1, N2 = 10000, 10
 step size constant =  0.100000
 
 8-th Repelication: 
-Solution, 0.95 CI, time : &[0.1742,0.2284] &[-0.8485,-0.8401] &7.29 
-Objective functions Expectation -0.844285 
+Solution, 0.95 CI, time : &[0.1726,0.2290] &[-0.8484,-0.8400] &7.89 
+Objective functions Expectation -0.844183 
 NUMofRESOURCE, NUMofPRODUCTION, NUMofROW = 2, 3, 5
 N1, N2 = 10000, 10
 step size constant =  0.100000
 
 9-th Repelication: 
-Solution, 0.95 CI, time : &[0.1726,0.2290] &[-0.8473,-0.8388] &6.96 
-Objective functions Expectation -0.843055 
+Solution, 0.95 CI, time : &[0.1730,0.2302] &[-0.8472,-0.8388] &7.75 
+Objective functions Expectation -0.842989 
 NUMofRESOURCE, NUMofPRODUCTION, NUMofROW = 2, 3, 5
 N1, N2 = 10000, 10
 step size constant =  0.100000

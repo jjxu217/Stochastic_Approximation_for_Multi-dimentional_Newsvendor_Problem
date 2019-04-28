@@ -37,7 +37,7 @@ int main(int argc, char * argv[]) {
     
     readConfig(); // read the parameters in the configuration file
     
-    oFile = open_ofile(argv[1]);
+    oFile = open_ofile("SA4MDNV");
     fprintf(oFile, "Stochastic Approximation Algo: \n");
     fclose(oFile);
     
@@ -78,14 +78,12 @@ int main(int argc, char * argv[]) {
         mean_obj = get_CI(CI,x);
         
         /********Output file ***************/
-        oFile = open_ofile(argv[1]);
+        oFile = open_ofile("SA4MDNV");
         
         fprintf(oFile, "%d-th Repelication: \n", r);
 
         fprintf(oFile, "Solution, 0.95 CI, time : &[%.4f,%.4f] &[%.4f,%.4f] &%.2f \n", x[0], x[1], CI[0], CI[1], duration);
         fprintf(oFile, "Objective functions Expectation %f \n", mean_obj);
-
-        
         fprintf(oFile, "NUMofRESOURCE, NUMofPRODUCTION, NUMofROW = %d, %d, %d\n", NUMofRESOURCE, NUMofPRODUCTION, NUMofROW);
         fprintf(oFile, "N1, N2 = %d, %d\n", config.N1, config.N2);
         fprintf(oFile, "step size constant =  %f\n\n", config.a);
@@ -485,16 +483,8 @@ float randUniform(long long *SEED)
 
 int readConfig() {
     FILE     *fptr;
-    char    line[2*BLOCKSIZE];
+    char    line[2*BLOCKSIZE], comment[2*BLOCKSIZE];
     int     status, maxReps = 30;
-    
-    //    char cwd[PATH_MAX];
-    //    if (getcwd(cwd, sizeof(cwd)) != NULL) {
-    //        printf("Current working dir: %s\n", cwd);
-    //    } else {
-    //        perror("getcwd() error");
-    //        return 1;
-    //    }
     
     fptr = fopen("config.SA", "r");
     if ( fptr == NULL ) {
@@ -507,7 +497,7 @@ int readConfig() {
     
     while ((status = (fscanf(fptr, "%s", line) != EOF))) {
         if (!(strcmp(line, "RUN_SEED"))) {
-            fscanf(fptr, "%lld", &config.RUN_SEED[config.NUM_REPS+1]);
+            fscanf(fptr, "%lld", &config.RUN_SEED[config.NUM_REPS]);
             config.NUM_REPS++;
         }
         else if (!(strcmp(line, "TOLERANCE")))
@@ -521,7 +511,7 @@ int readConfig() {
         else if (!(strcmp(line, "EVAL_SEED")))
             fscanf(fptr, "%lld", &config.EVAL_SEED);
         else if (!strcmp(line, "//"))
-            continue;
+            fgets(comment, 2*BLOCKSIZE, fptr);
         else {
             printf ("%s\n", line);
             fprintf(stderr, "unrecognized parameter in configuration file");
